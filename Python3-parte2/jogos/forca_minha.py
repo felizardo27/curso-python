@@ -1,17 +1,14 @@
-
 def jogar():
     print("\n*********************************")
     print("***Bem vindo ao jogo da Forca!***")
     print("*********************************\n")
 
     palavra_secreta = "banana".upper()
+    palavra = ["_" for letra in palavra_secreta]
     enforcou = False
     acertou = False
     erros = 0
-
-    palavra = ["_" for letra in palavra_secreta]
-    
-    
+ 
     for p in palavra:
         print(p, end=" ")
     print()
