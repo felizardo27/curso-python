@@ -28,17 +28,17 @@ class Filme(Programa):
 class Serie(Programa):
     def __init__(self, nome, ano, temporadas):
         super().__init__(nome, ano)
-        self.temporada = temporadas
+        self.temporadas = temporadas
 
 
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
 vingadores.dar_likes()
 vingadores.dar_likes()
 vingadores.dar_likes()
-print(f'Nome: {vingadores.nome} - Ano: {vingadores.ano} - Duração: {vingadores.duracao} minutos - Likes {vingadores.likes}')
+print(f'{vingadores.nome} - {vingadores.duracao}: {vingadores.likes}')
 
 
 friends = Serie('friends', 1994, 10)
 friends.dar_likes()
 friends.nome = 'amigos'
-print(f'Nome: {friends.nome} - Ano: {friends.ano} - Temporadas: {friends.temporada} - Likes {friends.likes}')
+print(f'{friends.nome} - {friends.temporadas}: Likes {friends.likes}')
